@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction Analyzer | SafePay AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">💳 SafePay <span>AI</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="analyze.html" class="active">Analyzer</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="blogs.html">Awareness</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="analyze-section glass">
+    <h2>AI Transaction Risk Analyzer</h2>
+    <p>Enter details below to check for suspicious patterns:</p>
+
+    <form id="fraudForm">
+      <textarea id="txnDesc" placeholder="Enter transaction details..." required></textarea>
+      <button type="submit" class="analyze-btn">Analyze with AI</button>
+    </form>
+
+    <div id="result" class="hidden result-card">
+      <h3>🔍 Analysis Result:</h3>
+      <p id="fraudMessage"></p>
+      <div id="riskIndicator"></div>
+    </div>
+  </section>
+</body>
+</html>
